@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Web Developer Portfolio">
+    <title>Pro Developer | Interactive Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="canvas1"></canvas>
+
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="#" class="logo"><span>Vijay Yadav</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content fade-in-up">
+                <h3>Hello, I am</h3>
+                <h1 class="glitch-effect" data-text="Vijay Yadav">Vijay Yadav</h1>
+                <h2 class="typing-container">I am a <span class="typing-text"></span><span class="cursor">|</span></h2>
+                <p>A creative technologist specializing in building exceptional digital experiences. I focus on accessible, pixel-perfect, and performant web applications.</p>
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+                
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <h2 class="counter" data-target="2">0</h2><span>+</span>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2 class="counter" data-target="0">0</h2><span>+</span>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2 class="counter" data-target="0">0</h2><span>+</span>
+                        <p>Years Exp</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-img fade-in-right">
+                <div class="img-border">
+                   <img src="vijayimage.jpg" alt="Profile">
+                </div>
+            </div>
+        </div>
+        
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-left reveal">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=600&h=400" alt="Working">
+                </div>
+                <div class="about-right reveal">
+                    <h3>Solving Problems Through Code</h3>
+                    <p>I am a <strong>Python Developer</strong> passionate about writing clean,
+efficient code and building real-world applications using Python,
+databases, and web technologies.</p>
+                    
+                    <div class="skills-wrapper">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML/CSS</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-line" data-width="75%"><span></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript </span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-line" data-width="70%"><span></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-line" data-width="85%"><span></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SQL
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-line" data-width="80%"><span></span></div>
+                        </div>
+                    </div>
+                    <a href="myresume.pdf" download="MyResume.pdf" class="btn btn-primary" style="margin-top: 20px;">
+    Download RESUME <i class="fas fa-download"></i>
+</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Building fast, responsive, and secure websites using modern technologies like React, Vue, and Tailwind.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive interfaces and user experiences that drive engagement and conversion.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>App Development</h3>
+                    <p>Developing cross-platform mobile applications using Flutter or React Native for iOS and Android.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Systems</h3>
+                    <p>Architecting robust server-side logic, database management, and API integrations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title">My Recent Work</h2>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?fit=crop&w=500&h=350" alt="Project 1">
+                        <div class="portfolio-overlay">
+                            <h4>Crypto Dashboard</h4>
+                            <p>React, Node.js</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?fit=crop&w=500&h=350" alt="Project 2">
+                        <div class="portfolio-overlay">
+                            <h4>Fitness Tracker</h4>
+                            <p>Flutter, Firebase</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?fit=crop&w=500&h=350" alt="Project 3">
+                        <div class="portfolio-overlay">
+                            <h4>Brand Identity</h4>
+                            <p>Figma, Adobe XD</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?fit=crop&w=500&h=350" alt="Project 4">
+                        <div class="portfolio-overlay">
+                            <h4>E-Commerce Shop</h4>
+                            <p>MERN Stack</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Experience & Education</h2>
+            <div class="timeline">
+                <div class="timeline-item left reveal">
+                    <div class="content">
+                        <h2>2025- Present</h2>
+                        <h3>STUDENT</h3>
+                        <p><strong>SVERI's College Of Engineering, Pandharpur</strong></p>
+                        <p>Pursuing a Master of Computer Applications (MCA) with a strong focus on developing programming, problem-solving, and software development skills through academic coursework and practical projects.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right reveal">
+                    <div class="content">
+                        <h2>2021 - OCT2024</h2>
+                        <h3>BCA Degree</h3>
+                        <p><strong>SBZM Barshi</strong></p>
+                        <p>Completed Bachelor of Computer Applications (BCA) with a strong foundation in programming and computer applications.</p>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info reveal">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Address :-</h4>
+                        <p>  P.B. No. 54, Gopalpur, Ranjani Road, Pandharpur, Dist. Solapur, Maharashtra  413304.</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email :-</h4>
+                        <p>  yadavvijayrajendra@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone :-</h4>
+                        <p>  8999038861</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form reveal">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p class="form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Vijay<span>Yadav</span></div>
+            <p>Designed and Built by Vijay Yadav</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
